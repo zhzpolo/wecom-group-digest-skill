@@ -1,0 +1,17 @@
+WeCom Group Digest
+
+The wxSQLite3 AES-128 page implementation and conservative protobuf text
+extraction are adapted from:
+  Young1108/skillhub
+  https://github.com/Young1108/skillhub
+  commit 36327ae256469ff52ae8f22b92096b76fbe61f30
+  yichen-wecom-local-vault/scripts/wecom_crypto.py and vault_cli.py
+  MIT License; full upstream license: third_party/skillhub-LICENSE.txt
+
+Changes: Windows-only in-memory key capture; no key file or plaintext database;
+stable DB/WAL/SHM double reads; WAL rolling checksums and commit boundaries;
+exact group/time filtering; auditable batch review and offline report rendering.
+
+The in-memory capture strategy scans only attached local WXWork.exe processes
+for candidate wxSQLite3 key material and accepts a candidate only when it
+validates the selected database page. No Tencent client code is redistributed.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "企业微信群摘要"
+  short_description: "安全读取本地企业微信群记录并生成带来源的HTML总结报告"
+  default_prompt: "Use $wecom-group-digest to summarize an authorized local WeCom group for the last 48 hours and generate an offline HTML report."
